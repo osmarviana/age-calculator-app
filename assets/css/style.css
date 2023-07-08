@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bolditalic;
+  src: url("../fonts/Poppins-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: Poppins-ExtraBolditalic;
+  src: url("../fonts/Poppins-ExtraBoldItalic.ttf");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(259, 50%, 13%);
+  color: hsl(0, 0%, 8%);
+}
+
+.container {
+  position: relative;
+  width: 540px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 100px;
+  padding: 40px;
+}
+
+.container h1 {
+  font-family: Poppins-Bold;
+  margin-bottom: 20px;
+}
+
+.container h1 span {
+  color: hsl(259, 100%, 65%);
+}
+
+.container .date-wrapper {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.date-wrapper .date-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-wrapper label {
+  font-family: Poppins-Bold;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: hsl(0, 1%, 44%);
+}
+
+.date-box input {
+  width: 100px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 86%);
+  margin-right: 20px;
+}
+
+.container img {
+  position: absolute;
+  right: 40px;
+  top: 195px;
+  width: 64px;
+  border-radius: 50%;
+  padding: 15px;
+  background-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
+.container .result-content {
+  margin-top: 30px;
+}
+
+.result-content p {
+  color: hsl(259, 100%, 65%);
+  font-size: 68px;
+  font-family: Poppins-ExtraBolditalic;
+  line-height: 65px;
+}
+
+.result-content p span {
+  color: hsl(0, 0%, 8%);
+}
+
+.error-content {
+  font-family: Poppins-Bolditalic;
+  color: rgb(211, 24, 24);
+  margin-top: 50px;
+}
+
+@media (max-width: 425px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+
+  .container .date-wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .date-box input {
+    width: 80px;
+  }
+
+  .container img {
+    top: 202px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 54px;
+  }
+
+  .container .result-content {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .result-content p {
+    font-size: 50px;
+  }
+}

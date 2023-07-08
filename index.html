@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Check Your <span>Age</span></h1>
+      <div class="date-wrapper">
+        <div class="date-box">
+          <label for="day">DAY</label>
+          <input type="number" id="day" placeholder="DD" min="1" max="31" />
+        </div>
+
+        <div class="date-box">
+          <label for="month">MONTH</label>
+          <input type="number" id="month" placeholder="MM" min="1" max="12" />
+        </div>
+
+        <div class="date-box">
+          <label for="year">YEAR</label>
+          <input type="number" id="year" placeholder="YYYY" />
+        </div>
+      </div>
+      <a id="btn-calculate">
+        <img src="./assets/images/icon-arrow.svg" />
+      </a>
+      <div id="result"></div>
+    </main>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
